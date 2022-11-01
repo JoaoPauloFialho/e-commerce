@@ -1,0 +1,105 @@
+.caixa_login_cadastro{
+    padding: 2rem;
+    border: 1px solid #696969;
+    width: 30%;
+    margin: 3rem auto auto auto;
+}
+
+.titulo_login_cadastro{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario_login_cadastro{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.input_login_cadastro{
+    height: 2rem;
+    width: 80%;
+    justify-self: center;
+    background-color: white;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+}
+
+.button_login_cadastro{
+    width: 85%;
+    height: 3rem;
+    justify-self: center;
+    background-color: red;
+    font-size: 1rem;
+    border-radius: 2px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_login_cadastro:hover{
+    background-color: #FF2222;
+}
+
+.redes_sociais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;    
+    border-top: 0.5px solid white;
+    column-gap: 1rem
+}
+
+.texto_login_cadastro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.facebook_botao{
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #1876f2;
+    border: solid blue 1px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.google_botao{
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #E72626;
+    border: solid #E72626 1px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cadastro_login_texto_botao{
+    margin: 1rem auto 8rem auto;
+    justify-content: center;
+    display: flex;
+}
+
+.texto_cadastre-se_login{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao_cadastre-se_login{
+    margin-left: 0.2rem;
+    text-decoration:underline;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.esqueci_senha{
+    text-align: center;
+    margin-bottom: 8rem;
+}

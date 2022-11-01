@@ -1,0 +1,255 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1F1F1F;
+}
+
+#teste {
+    color: white;
+}
+
+.topo_cabecalho {
+    background-color: black;
+    padding: 1vh 2vh 1vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_cabecalho {
+    height: 13vh;
+    justify-self: center;
+}
+
+.form_pesquisa {
+    padding: 1em;
+    display: flex;
+}
+
+.form_pesquisa input button {
+    font-size: 1em;
+    border-radius: 1em;
+    border: none;
+    justify-self: center;
+}
+
+.busca {
+    background-color: white;
+    height: 2vh;
+    align-self: center;
+    margin-left: 4rem;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.botao {
+    cursor: pointer;
+    align-self: center;
+}
+
+.icone_pesquisa {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cabecalho_nav {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.login_cadastro_secao {
+    display: flex;
+}
+
+#login_barra {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.cabecalho_carrinho {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.login {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    align-self: center;
+}
+
+.fac {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    align-self: center;
+}
+
+.login:hover,
+.cabecalho_carrinho:hover,
+.fac:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.user_icone,
+.headset_icone,
+.carrinho_icone {
+    color: #FF0000;
+}
+
+.cabecalho_categorias {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141414;
+    padding: 1vh 4vh 1vh 1.3vh;
+}
+
+.botao_categorias {
+    background-color: #141414;
+    border: none;
+    cursor: pointer;
+}
+
+.icone_categorias {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu_lateral {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -100vh;
+    transition: 0.2s;
+    height: 100%;
+    padding: 1rem;
+}
+
+.menu_lateral-ativo {
+    left: 0;
+    transition: 0.2s;
+}
+
+.menu_logo {
+    width: 10rem;
+    align-self: center;
+}
+
+.menu_links {
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menu_links:hover {
+    color: white;
+    border-right: 1px solid white;
+}
+
+.banner_halloween {
+    width: 100%;
+    height: 14rem;
+}
+
+.imagens_home_topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.imagem_home_topo {
+    width: 100%;
+    box-shadow: 6px 6px black;
+}
+
+.imagem_samsung_monitor_home_topo {
+    margin: auto;
+    width: 90%;
+    height: 16rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.produtos {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.titulo_body {
+    grid-column: span 5;
+    color: white;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.cartao_produto {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1rem;
+    align-content: space-around;
+}
+
+.imagem_produto {
+    width: 10rem;
+    align-self: center;
+}
+
+.dados_produto {
+    margin-top: auto;
+}
+
+.descricao_produto {
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+
+.preco {
+    color: red;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.preco_num {
+    font-size: 1.3rem;
+}
+
+.parcelas {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.rodape {
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.logo_rodape {
+    height: 4rem;
+}
+
+.texto_rodape {
+    font-size: 1rem;
+}
+
+.apresentacao_rodape {
+    color: red;
+}

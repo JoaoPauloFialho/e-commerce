@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <section class="topo_cabecalho">
+            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.PNG"></a>
+
+            <nav class="cabecalho_nav">
+                <div class="login_cadastro_secao">
+                    <a class="login" href="login.html"><i class="fa-solid fa-user user_icone"></i> Login</a>
+                    <p id="login_barra">|</p><a class="login" href="cadastro.html">Cadastro</a>
+                </div>
+                <a class="fac" href=""><i class="fa-solid fa-headset headset_icone"></i> Atendimento ao cliente</a>
+                <a class="cabecalho_carrinho" href="carrinho.html"><i
+                        class="fa-solid fa-cart-shopping carrinho_icone"></i> Carrinho
+                    de Compras</a>
+            </nav>
+        </section>
+
+        <section class="cabecalho_categorias">
+            <button class="botao_categorias">
+                <i class="icone_categorias fa-solid fa-bars"></i>
+            </button>
+
+            <div class="caixadepesquisa">
+                <input class="busca" type="text" placeholder="Pesquisar produtos">
+                <a class="botao" href="">
+                    <i class="icone_pesquisa fas fa-search"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+    <nav class="menu_lateral">
+        <img class="menu_logo" src="assets/img/logo_menu.png">
+        <a class="menu_links" href="#">Periféricos</a>
+        <a class="menu_links" href="#">Hardware</a>
+        <a class="menu_links" href="procura_computadores.html">Computadores</a>
+        <a class="menu_links" href="#">Consoles</a>
+        <a class="menu_links" href="#">Cadeiras/Mesas</a>
+        <a class="menu_links" href="#">Monitores</a>
+        <a class="menu_links" href="#">Notebooks</a>
+    </nav>
+    <script src="index.js"></script>
+
+    <main>
+        <h1 class="titulo"><i class="fa-solid fa-cart-shopping"></i> MEU CARRINHO</h1>
+        <section class="meu_carrinho">
+            <div class="produto">
+                <img class="imagem_produto" src="assets/img/refletor_carrinho.jpg">
+                <div class="descricao">
+                    <p class="descricao_produto_carrinho">Refletor Solar Zinnia ZRS100, Led, 100w, Bateria 8000Mah
+                    <p class="descricao_produto_carrinho">Com
+                        Controle Remoto IP67, ZNE-ZRS100-01</p>
+                    <p class="descricao_produto_carrinho">SKU: ZNE-ZRS100-01</p>
+                </div>
+                <div class="quantidade">
+                    <p class="icone_plus_minus_carrinho"><i class="fa-solid fa-minus"></i>
+                    <p class="icone_plus_minus_carrinho">1</p><i class="fa-solid fa-plus icone_plus_minus_carrinho"></i>
+                    </p>
+                </div>
+                <p class="descricao_produto_carrinho">1 x R$ 272,61</p>
+                <i class="fa-solid fa-trash descricao_produto_carrinho"></i>
+            </div>
+
+            <div class="cupom_desconto">
+                <h2 class="titulo_cupom_frete">Cupom de desconto:</h2>
+                <input class="form_cupom_frete" type="text" name="cupom" placeholder="Digite o cupom">
+                <input class="button_cupom_frete" type="button" name="enviar" value="APLICAR">
+            </div>
+
+            <div class="frete">
+                <h2 class="titulo_cupom_frete">Frete e Prazos:</h2>
+                <input class="form_cupom_frete" type="text" name="cupom" placeholder="CEP*">
+                <input class="button_cupom_frete" type="button" name="enviar" value="CALCULAR">
+            </div>
+
+            <div class="resumo">
+                <h2 class="titulo_resumo">RESUMO</h2>
+                <div class="subtotal_carrinho">
+                    <p class="subtotal">Subtotal</p>
+                    <p class="subtotal">R$ 272,61</p>
+                </div>
+                <div class="total_carrinho">
+                    <p class="total">Total</p>
+                    <p class="total">R$ 272,6</p>
+                </div>
+                <div class="pagamento">
+                    <p class="a_vista_carrinho">à vista</p>
+                    <p class="preco_pagamento_carrinho">R$ 272,6</p>
+                    <p class="linha">       </p>
+                    <p class="preco_pagamento_carrinho_cartao">R$ 272,6</p>
+                    <p class="dividido">em até 12x de 22,72</p>
+                    <p class="botao_resumo"></p>
+                </div>
+                <input class="button_finalizar_pedido" type="button" name="enviar" value="FINALIZAR PEDIDO">
+            </div>
+        </section>
+        <section class="historico_navegacao_carrinhos">
+            <h1 class="historico_titulo_carrinho"><i class="fa-solid fa-clock-rotate-left"></i> SEU HISTÓRICO DE NAVEGAÇÃO</h1>
+            <div class="imagens_historico">
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/cadeira_gamer1.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/headset_gamer1.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/mouse_gamer1.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/mouse_pad1.webp"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/monitor_gamer1.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/monitor_gamer2.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/pc_gamer2.png"></li></a>
+                <a href="produto.html"><img class="imagem_historico_navegacao" src="assets/img/pc_gamer1.png"></li></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img class="logo_rodape" src="assets/img/logo.png">
+        <div>
+            <p class="texto_rodape apresentacao_rodape">FIALHO SHOP ®É UMA MARCA REGISTRADA DE</p>
+            <p class="texto_rodape apresentacao_rodape">FIALHO LTDA | CNPJ: 00.000.000/0000-00</p>
+        </div>
+    </footer>
+</body>
+
+</html>

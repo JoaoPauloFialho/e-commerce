@@ -1,0 +1,6 @@
+        <section class="imagens_home_topo">
+            <a class="imagem_samsung_monitor_home_topo" href=""><img class="imagem_home_topo" src="assets/img/samsung_monitor.webp"></a>
+            <a href=""><img class="imagem_cadeiras_gamer_home_topo imagem_home_topo"
+                    src="assets/img/cadeiras_gamer_home.png"></a>
+            <a href=""><img class="imagem_monitor_home_topo imagem_home_topo" src="assets/img/monitor_home.png"></a>
+        </section>

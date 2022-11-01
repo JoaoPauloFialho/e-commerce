@@ -1,0 +1,226 @@
+.titulo{
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 2rem;
+}
+
+.meu_carrinho{
+    margin: auto;  
+    display: grid;
+    row-gap: 3rem;
+    column-gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.produto{
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    border-radius: 7px;
+    align-items: center;
+    grid-column: 1/span 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagem_produto{
+    height: 80%;
+}
+
+.descricao_produto_carrinho{
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.quantidade{
+    display: flex;
+}
+
+.icone_plus_minus_carrinho{
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.cupom_desconto{
+    grid-row: 2;
+    background-color: rgb(49, 49, 49);
+    height: 40%;
+    padding: 1rem;
+    display: grid;
+    grid-column: 1/span 2;
+    border-radius: 7px;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.4rem;
+}
+
+.titulo_cupom_frete{
+    font-size: 1.1rem;
+    grid-column: 1/span 4;
+    color: white;
+}
+
+.form_cupom_frete{
+    grid-row: 2;
+    grid-column: 1/span 3;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    grid-column: 1/span 3;
+    margin-right: 1rem;
+}
+
+.button_cupom_frete{
+    border:solid 2px white;
+    color: white;
+    opacity: 80%;
+    background-color: grey;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.button_cupom_frete:hover{
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.frete{
+    grid-row: 2;
+    background-color: rgb(49, 49, 49);
+    height: 40%;
+    border-radius: 7px;
+    padding: 1rem;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.4rem;
+}
+
+.resumo{
+    margin-left: 1rem;
+    grid-row: 1/span 2;
+    background-color: rgb(49, 49, 49);
+    border-radius: 7px;
+    padding: 1rem;
+    grid-column-start: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.titulo_resumo{
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    border-bottom: solid 1px white;
+    align-self: center;
+    text-align: center;
+}
+
+.subtotal_carrinho{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subtotal{
+    color: white;
+    font-size: 1rem;
+}
+
+.total_carrinho{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(78, 78, 78);
+}
+
+.total{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.a_vista_carrinho{
+    font-size: 1rem;
+    color: white;
+    align-self: center;
+}
+
+.preco_pagamento_carrinho{
+    color: white;
+    font-size: 0.7rem;
+    align-self: center;
+}
+
+.cartao_carrinho{
+    font-size: 0.9rem;
+    color: white;
+    align-self: center;
+}
+
+.linha{
+    border-bottom: solid 1px red;
+}
+
+.preco_pagamento_carrinho_cartao{
+    color: red;
+    font-size: 0.7rem;
+    align-self: center;
+}
+
+.dividido{
+    align-self: center;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.button_finalizar_pedido{
+    background-color: green;
+    color: white;
+    height: 4rem;
+    border-radius: 10px;
+}
+
+.historico_navegacao_carrinhos{
+    display: flex;
+    flex-direction:  column;
+    row-gap: 2rem;
+    margin: 3rem 0 7rem 2rem ;
+}
+
+.historico_titulo_carrinho{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.imagens_historico{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.imagem_historico_navegacao{
+    background-color: white;
+    display: inline;
+    width: 7rem;
+    border-radius: 360px;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+
+.imagem_historico_navegacao:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+

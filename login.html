@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login_cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <section class="topo_cabecalho">
+            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.PNG"></a>
+
+            <nav class="cabecalho_nav">
+                <div class="login_cadastro_secao">
+                    <a class="login" href="login.html"><i class="fa-solid fa-user user_icone"></i> Login</a>
+                    <p id="login_barra">|</p><a class="login" href="cadastro.html">Cadastro</a>
+                </div>
+                <a class="fac" href=""><i class="fa-solid fa-headset headset_icone"></i> Atendimento ao cliente</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="caixa_login_cadastro">
+            <h2 class="titulo_login_cadastro">FAZER LOGIN</h2>
+            <div>
+                <form class="formulario_login_cadastro">
+                    <input class="input_login_cadastro" type="text" name="usuario" placeholder="E-mail, CPF ou CNPJ">
+                    <input class="input_login_cadastro" type="password" name="senha" placeholder="Senha">
+                    <input class="button_login_cadastro" type="button" name="enviar" value="ENTRAR">
+                </form>
+
+                <div class="redes_sociais">
+                    <p class="texto_login_cadastro">ACESSAR COM REDES SOCIAIS</p>
+                    <a class="facebook_botao" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                    <a class="google_botao" href="https://www.google.com"><i class="fa-brands fa-google"></i> Google</a>
+                </div>
+            </div>
+        </section>
+        <div class="cadastro_login_texto_botao">
+            <p class="texto_cadastre-se_login">Novo na Fialho Shop?</p>
+            <a class="botao_cadastre-se_login" href="cadastro.html">Cadastre-se</a>
+        </div>
+        <div class="esqueci_senha">
+            <a class="botao_cadastre-se_login" href="cadastro.html">Esqueci minha senha</a>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <img class="logo_rodape" src="assets/img/logo.png">
+        <div>
+            <p class="texto_rodape apresentacao_rodape">FIALHO SHOP ®É UMA MARCA REGISTRADA DE</p>
+            <p class="texto_rodape apresentacao_rodape">FIALHO LTDA | CNPJ: 00.000.000/0000-00</p>
+        </div>
+    </footer>
+</body>
+
+</html>
