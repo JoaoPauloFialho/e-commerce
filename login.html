@@ -21,7 +21,7 @@
     <header class="cabecalho">
 
         <section class="topo_cabecalho">
-            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.PNG"></a>
+            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.png"></a>
 
             <nav class="cabecalho_nav">
                 <div class="login_cadastro_secao">
@@ -37,10 +37,11 @@
         <section class="caixa_login_cadastro">
             <h2 class="titulo_login_cadastro">FAZER LOGIN</h2>
             <div>
-                <form class="formulario_login_cadastro">
+                <form class="formulario_login_cadastro" action="index.html" method="post">
                     <input class="input_login_cadastro" type="text" name="usuario" placeholder="E-mail, CPF ou CNPJ">
-                    <input class="input_login_cadastro" type="password" name="senha" placeholder="Senha">
-                    <input class="button_login_cadastro" type="button" name="enviar" value="ENTRAR">
+                    <input class="input_login_cadastro senha" type="password" name="senha" placeholder="Senha">
+                    <i class="fa-sharp fa-solid fa-eye img_mostrar_senha"></i>
+                    <button class="button_login_cadastro" type="submit">Login</button>
                 </form>
 
                 <div class="redes_sociais">
@@ -66,6 +67,7 @@
             <p class="texto_rodape apresentacao_rodape">FIALHO LTDA | CNPJ: 00.000.000/0000-00</p>
         </div>
     </footer>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>

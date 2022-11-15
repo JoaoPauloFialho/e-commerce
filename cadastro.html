@@ -21,7 +21,7 @@
     <header class="cabecalho">
 
         <section class="topo_cabecalho">
-            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.PNG"></a>
+            <a href="index.html"><img class="logo_cabecalho" src="assets/img/logo.png"></a>
 
             <nav class="cabecalho_nav">
                 <div class="login_cadastro_secao">
@@ -37,11 +37,12 @@
         <section class="caixa_login_cadastro">
             <h2 class="titulo_login_cadastro">FAZER CADASTRO</h2>
             <div>
-                <form class="formulario_login_cadastro">
-                    <input class="input_login_cadastro" type="text" name="usuario" placeholder="E-mail, CPF ou CNPJ">
-                    <input class="input_login_cadastro" type="password" name="senha" placeholder="Senha">
-                    <input class="input_login_cadastro" type="password" name="confirma_senha" placeholder="Confirmar Senha">
-                    <input class="button_login_cadastro" type="button" name="enviar" value="ENTRAR">
+                <form class="formulario_login_cadastro" action="login.html" method="post">
+                    <input class="validar usuario_login_cadastro input_login_cadastro" type="text" name="usuario" placeholder="E-mail, CPF ou CNPJ">
+                    <input inputsenha class="validar senha input_login_cadastro" type="password" name="senha" placeholder="Senha">
+                    <input inputsenha class="validar repetir_senha input_login_cadastro" type="password" name="confirma_senha" placeholder="Confirmar Senha">
+                    <i class="fa-sharp fa-solid fa-eye img_mostrar_senha"></i>
+                    <button class="button_login_cadastro" type="submit">Cadastrar</button>
                 </form>
 
                 <div class="redes_sociais">
@@ -52,9 +53,6 @@
                 </div>
             </div>
         </section>
-        <script>
-                    document.getElementById('message').style.color = 'green';
-        </script>
         <div class="cadastro_login_texto_botao">
             <p class="texto_cadastre-se_login">Já possui uma conta na Fialho Shop?</p>
             <a class="botao_cadastre-se_login" href="login.html">Login</a>
@@ -68,6 +66,7 @@
             <p class="texto_rodape apresentacao_rodape">FIALHO LTDA | CNPJ: 00.000.000/0000-00</p>
         </div>
     </footer>
+    <script src="assets/js/cadastro.js"></script>
 </body>
 
 </html>
