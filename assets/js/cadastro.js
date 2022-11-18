@@ -7,7 +7,7 @@ const botao = document.querySelector('.button_login_cadastro')
 const mostrar_senha = document.querySelector('.img_mostrar_senha')
 
 //lista para salvar no local storage, se ela não existir eu instancio uma
-const usuarios_cadastrados =  localStorage.length == 0 ? [] : JSON.parse(localStorage.getItem("usuarios_cadastrados"))
+const usuarios_cadastrados = JSON.parse(localStorage.getItem("usuarios_cadastrados")) || []
 
 //adiciona um evento de submit
 formulario.addEventListener('submit', e =>{
