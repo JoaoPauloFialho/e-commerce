@@ -4,6 +4,15 @@ const usuario = document.querySelector('.usuario_login_cadastro')
 const senha = document.querySelector('.senha')
 const botao = document.querySelector('.button_login_cadastro')
 const mostrar_senha = document.querySelector('.img_mostrar_senha')
+const dados_usuario = JSON.parse(localStorage.getItem('usuario_dados'))
+
+if(dados_usuario === null){
+    let usuario_dados = {
+        validado : false,
+        usuario : 'DESLOGADO',
+    }
+    localStorage.setItem('usuario_dados', JSON.stringify(usuario_dados))
+}
 
 //lista local storage
 const usuarios = JSON.parse(localStorage.getItem("usuarios_cadastrados"))
@@ -12,16 +21,21 @@ formulario.addEventListener('submit', e => {
     handleSubmit(e)
 })
 
+//função que controla o handle submit e autentica o usuário no sistema
 function handleSubmit(e) {
     remove_erros();
     e.preventDefault();
-
     const validado = valida_login();
 
     if (validado) {
-        alert('Usuário Logado')
-        formulario.submit()
-        window.location.assign('index.html')
+        alert('Usuário Logado');
+        formulario.submit();
+        let usuario_dados = {
+            validado : true,
+            usuario : usuario.value
+        }
+        localStorage.setItem('usuario_dados', JSON.stringify(usuario_dados))
+        window.location.assign('index.html');
 
     }
 }

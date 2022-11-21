@@ -101,6 +101,61 @@ body {
     color: #FF0000;
 }
 
+.perfil_usuario {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    align-self: center;
+    cursor: pointer;
+}
+.perfil_usuario:hover{
+    color: white;
+}
+
+.perfil_usuario-ativo{
+    color: white;
+}
+
+.login_template:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.triangulo_perfil{
+    margin-left: 0.2rem;
+    transition: 0.3s;
+}
+
+.triangulo_perfil-ativo{
+    transition: 0.3s;
+    transform: rotate(180deg);
+}
+
+.menu_perfil{
+    background-color: black;
+    padding: 1.3rem;
+    position: absolute;
+    top: -7rem;
+}
+
+.menu_perfil-ativo{
+    top: 4rem;
+}
+
+.lista_menu_perfil li{
+    color: grey;
+    margin-bottom: 0.4rem;
+    margin-right: 2rem;
+}
+
+.logout{
+    cursor: pointer;
+}
+
+.logout:hover{
+    color: white;
+}
+
 .cabecalho_categorias {
     display: flex;
     justify-content: space-between;
