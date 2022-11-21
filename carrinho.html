@@ -61,20 +61,6 @@
         <h1 class="titulo"><i class="fa-solid fa-cart-shopping"></i> MEU CARRINHO</h1>
         <section class="meu_carrinho">
             <div class="produto">
-                <img class="imagem_produto" src="assets/img/refletor_carrinho.jpg">
-                <div class="descricao">
-                    <p class="descricao_produto_carrinho">Refletor Solar Zinnia ZRS100, Led, 100w, Bateria 8000Mah
-                    <p class="descricao_produto_carrinho">Com
-                        Controle Remoto IP67, ZNE-ZRS100-01</p>
-                    <p class="descricao_produto_carrinho">SKU: ZNE-ZRS100-01</p>
-                </div>
-                <div class="quantidade">
-                    <p class="icone_plus_minus_carrinho"><i class="fa-solid fa-minus"></i>
-                    <p class="icone_plus_minus_carrinho">1</p><i class="fa-solid fa-plus icone_plus_minus_carrinho"></i>
-                    </p>
-                </div>
-                <p class="descricao_produto_carrinho">1 x R$ 272,61</p>
-                <i class="fa-solid fa-trash descricao_produto_carrinho"></i>
             </div>
 
             <div class="cupom_desconto">
@@ -85,31 +71,28 @@
 
             <div class="frete">
                 <h2 class="titulo_cupom_frete">Frete e Prazos:</h2>
-                <input class="form_cupom_frete" type="text" name="cupom" placeholder="CEP*">
-                <input class="button_cupom_frete" type="button" name="enviar" value="CALCULAR">
+                <form class="formulario_frete">
+                    <input class="input_frete" type="text" name="cupom" placeholder="CEP*">
+                    <a class="button_cupom_frete" botaocalculafrete>CALCULAR</a>
+                </form>
             </div>
 
             <div class="resumo">
                 <h2 class="titulo_resumo">RESUMO</h2>
                 <div class="subtotal_carrinho">
                     <p class="subtotal">Subtotal</p>
-                    <p class="subtotal">R$ 272,61</p>
+                    <p class="subtotal">R$ <input preco_subtotal style="width: 4rem; color: white;"></p>
+                </div>                
+                <div class="subtotal_carrinho" frete>
                 </div>
                 <div class="total_carrinho">
                     <p class="total">Total</p>
-                    <p class="total">R$ 272,6</p>
-                </div>
-                <div class="pagamento">
-                    <p class="a_vista_carrinho">à vista</p>
-                    <p class="preco_pagamento_carrinho">R$ 272,6</p>
-                    <p class="linha">       </p>
-                    <p class="preco_pagamento_carrinho_cartao">R$ 272,6</p>
-                    <p class="dividido">em até 12x de 22,72</p>
-                    <p class="botao_resumo"></p>
+                    <p class="total">R$ <input preco_total style="width: 4rem; color: white;"></p>
                 </div>
                 <input class="button_finalizar_pedido" type="button" name="enviar" value="FINALIZAR PEDIDO">
             </div>
         </section>
+        
         <section class="historico_navegacao_carrinhos">
             <h1 class="historico_titulo_carrinho"><i class="fa-solid fa-clock-rotate-left"></i> SEU HISTÓRICO DE NAVEGAÇÃO</h1>
             <div class="imagens_historico">
@@ -133,6 +116,7 @@
         </div>
     </footer>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/carrinho_compras.js"></script>
 </body>
 
 </html>

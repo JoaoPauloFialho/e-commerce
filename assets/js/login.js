@@ -40,7 +40,7 @@ function handleSubmit(e) {
     }
 }
 
-
+//função que valida se o usuário e senha são válidos 
 function valida_login() {
     if(usuarios){
         for(let i = 0; i < usuarios.length; i++){
